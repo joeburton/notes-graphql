@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "A minimal GraphQL server developed with Express and Apollo Server",
   "scripts": {
-    "server": "nodemon --exec babel-node src/index.js"
+    "dev": "nodemon --exec babel-node src/index.js",
+    "start": "babel-node src/index.js"
   },
   "type": "module",
   "keywords": [
