@@ -1,18 +1,16 @@
-const typeDefNotes = `
-  extend type Query {
-    notes: [Note]
-    note(id: String): Note
-  }
+import { gql } from 'apollo-server-express';
 
+const typeDefs = gql`
   type Note {
     id: String
     title: String
     note: String
   }
+
+  type Query {
+    notes: [Note]
+    note(id: String): Note
+  }
 `;
 
-const typeDef = `
-  type Query
-`;
-
-export const typeDefs = [typeDef, typeDefNotes];
+export default typeDefs;

@@ -1,6 +1,6 @@
 import { notes } from '../data/index.js';
 
-const notesResolver = {
+const resolvers = {
   Query: {
     notes: () => notes,
     note: (_root, args) => {
@@ -9,4 +9,4 @@ const notesResolver = {
   },
 };
 
-export const resolvers = [notesResolver];
+export default resolvers;
