@@ -9,8 +9,8 @@ import resolvers from './resolvers/index.js';
 async function startServer() {
   const app = express();
 
-  // app.use(cors());
-  // app.use(express.json());
+  app.use(cors());
+  app.use(express.json());
 
   const httpServer = createServer(app);
 
@@ -35,3 +35,9 @@ async function startServer() {
 }
 
 startServer();
+
+export const config = {
+  api: {
+    bodyParser: false,
+  },
+};
