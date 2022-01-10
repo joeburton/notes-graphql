@@ -27,10 +27,6 @@ async function startServer() {
 
   console.log(`🚀 Server ready at http://localhost:3000${server.graphqlPath}`);
 
-  process.argv.forEach((val, index) => {
-    console.log(`${index}: ${val}`);
-  });
-
   return { server, app };
 }
 

@@ -1,4 +1,4 @@
-# apollo-server-vercel
+# Apollo Server Vercel
 
 Small GraphQL server [Apollo server](https://www.apollographql.com/docs/apollo-server/) on [Vercel](https://vercel.com/).
 
