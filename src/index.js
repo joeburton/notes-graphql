@@ -1,4 +1,5 @@
 import express from 'express';
+import cors from 'cors';
 import { createServer } from 'http';
 import { ApolloServer } from 'apollo-server-express';
 
@@ -7,6 +8,9 @@ import resolvers from './resolvers/index.js';
 
 async function startServer() {
   const app = express();
+
+  app.use(cors());
+  app.use(express.json());
 
   const httpServer = createServer(app);
 
